@@ -1,0 +1,23 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Swap/temp files
+*.swp
+*.swo
+*.tmp
+*.bak
+~$*
+
+# Netlify build/deploy folders
+.netlify/
+dist/
+build/
+
+# Images you don’t want in Git
+images/temp/
+images/scratch/

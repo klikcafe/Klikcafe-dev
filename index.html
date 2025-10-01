@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Klikcafe Demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kc.css" />
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <div class="kc-top">
+      <div class="kc-row kc-padding kc-black">
+        <div class="kc-col s3">
+          <a href="#" class="kc-button kc-block kc-black">HOME</a>
+        </div>
+        <div class="kc-col s3">
+          <a href="#about" class="kc-button kc-block kc-black">ABOUT</a>
+        </div>
+        <div class="kc-col s3">
+          <a href="#menu" class="kc-button kc-block kc-black">MENU</a>
+        </div>
+        <div class="kc-col s3">
+          <a href="#where" class="kc-button kc-block kc-black">WHERE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bgimg kc-display-container kc-grayscale-min" id="home">
+      <div class="kc-display-topmiddle kc-center kc-padding-large">
+        <span class="kc-text-white">the Cafe</span>
+      </div>
+      <div class="kc-display-bottomleft kc-center kc-padding-large">
+        <span class="kc-tag">Open from 6am to 5pm</span>
+      </div>
+      <div class="kc-display-bottomright kc-center kc-padding-large">
+        <span class="kc-tag">15 Adr street, 5015</span>
+      </div>
+    </header>
+
+    <div class="kc-sand kc-grayscale kc-large">
+      <!-- About -->
+      <div class="kc-container" id="about">
+        <div class="text-block">
+          <h5 class="kc-center kc-padding-64">
+            <span class="kc-tag kc-wide">ABOUT THE CAFE</span>
+          </h5>
+          <p>The Cafe was founded in blabla by Mr. Smith...</p>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <div class="kc-container" id="menu">
+        <div class="text-block">
+          <h5 class="kc-center kc-padding-48">
+            <span class="kc-tag kc-wide">THE MENU</span>
+          </h5>
+
+          <div id="level0" class="level"></div>
+          <div id="level1" class="level" style="display: none"></div>
+          <div id="level2" class="level" style="display: none"></div>
+          <div id="items"></div>
+        </div>
+      </div>
+
+      <!-- Where Section -->
+      <div class="kc-container" id="where">
+        <div class="text-block">
+          <h5 class="kc-center kc-padding-48">
+            <span class="kc-tag kc-wide">WHERE TO FIND US</span>
+          </h5>
+          <p>15 Adr street, 5015, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="kc-center kc-light-grey kc-padding-48 kc-large">
+      <p>
+        Powered by
+        <a
+          href="https://kc-css.github.io/"
+          target="_blank"
+          class="kc-hover-text-green"
+          >kc.css</a
+        >
+      </p>
+    </footer>
+
+    <script src="js/kc-menuLocal.js"></script>
+  </body>
+</html>
