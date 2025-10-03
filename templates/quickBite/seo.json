@@ -1,0 +1,10 @@
+{
+    "title": "QuickBite Café - Fast, Fresh Coffee & Snacks",
+    "description": "QuickBite Café delivers freshly brewed coffee and tasty snacks quickly and with a smile.",
+    "keywords": ["coffee", "quick bites", "fast cafe", "KlikCafe"],
+    "images": {
+        "cafeCounter.jpeg": "QuickBite café counter ready for customers",
+        "menus.jpeg": "Daily menu board at QuickBite café",
+        "smilingWaiter.jpeg": "Friendly waiter serving coffee"
+    }
+}

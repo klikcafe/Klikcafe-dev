@@ -1,0 +1,10 @@
+{
+    "title": "Barista Coffee House - Freshly Brewed Espresso & Snacks",
+    "description": "Enjoy artisan espresso, freshly brewed coffee, and delicious snacks at Barista Coffee House.",
+    "keywords": ["coffee", "espresso", "barista", "cafe", "KlikCafe"],
+    "images": {
+        "cafeCounter.jpeg": "Coffee shop counter with barista preparing espresso",
+        "menus.jpeg": "KlikCafe menu board with daily specials",
+        "smilingWaiter.jpeg": "Friendly waiter serving coffee with a smile"
+    }
+}
