@@ -1,0 +1,90 @@
+<style>
+/* Font & Body */
+body, h1, h2, h3, h4, h5, h6, .w3-wide {
+  font-family: "Montserrat", sans-serif;
+}
+.w3-sidebar a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Product price */
+.product-price {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Product container hover effect */
+.w3-container:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Product tags */
+.w3-tag {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+/* Buy now button hover effect */
+.w3-display-hover button {
+  background-color: #000;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.w3-display-hover button:hover {
+  opacity: 1;
+}
+
+/* Sidebar style */
+.w3-sidebar {
+  background-color: #f4f4f4;
+}
+.w3-sidebar a {
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Accordion sub-menu style */
+.w3-bar-block .w3-button.w3-light-grey {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Newsletter section */
+.w3-black {
+  background-color: #111 !important;
+}
+.w3-black input[type=text] {
+  padding: 10px;
+  border: none;
+}
+.w3-black button {
+  background-color: #ff5252;
+  border: none;
+}
+
+/* Footer style */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+}
+footer h4 {
+  margin-bottom: 15px;
+}
+footer a {
+  color: #ff5252;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .w3-sidebar {
+    width: 100%;
+  }
+}
+</style>

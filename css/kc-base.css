@@ -1,0 +1,74 @@
+/* kc-base.css */
+/* -------------------- */
+/* Klikcafe Base Styles - Core Layout and Typography */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.kc-container {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kc-header {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.kc-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.kc-btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.kc-btn-primary {
+  background-color: #0078d4;
+  color: white;
+}
+
+.kc-btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Layout helpers */
+.kc-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.kc-col {
+  padding: 8px;
+  flex: 1;
+}
+
+/* Images */
+.kc-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility classes */
+.kc-text-center {
+  text-align: center;
+}
+
+.kc-hide {
+  display: none !important;
+}

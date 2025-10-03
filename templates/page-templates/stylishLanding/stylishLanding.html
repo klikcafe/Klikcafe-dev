@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stylis Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="stylisLanding.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+  </head>
+  <body class="w3-light-grey">
+    <!-- Sidebar/Menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white template-sidebar">
+      <h3 class="w3-bar-item">Menu</h3>
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </nav>
+
+    <!-- Overlay -->
+    <div
+      class="w3-overlay template-overlay"
+      onclick="closeSidebar()"
+      style="display: none"
+    ></div>
+
+    <!-- Main content -->
+    <div class="w3-main" style="margin-left: 250px">
+      <!-- Header -->
+      <header class="template-header">
+        <h1 class="w3-center">Welcome to Stylis</h1>
+      </header>
+
+      <!-- About -->
+      <section id="about" class="about-container">
+        <h2>About Us</h2>
+        <p>
+          Stylis is a modern landing page template with clean design and
+          responsive layout...
+        </p>
+        <img src="/w3images/about.jpg" alt="About Image" class="about-img" />
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="gallery-row w3-row w3-grayscale-min">
+        <div class="w3-quarter">
+          <img
+            src="/w3images/girl.jpg"
+            class="gallery-img"
+            alt="Canoeing again"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="/w3images/bridge.jpg"
+            class="gallery-img"
+            alt="Bridge"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="/w3images/fjords.jpg"
+            class="gallery-img"
+            alt="Fjords"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="/w3images/forest.jpg"
+            class="gallery-img"
+            alt="Forest"
+            onclick="onClick(this)"
+          />
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="w3-container">
+        <h2>Our Skills</h2>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 90%">HTML - 90%</div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 80%">CSS - 80%</div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="pricing-table">
+        <h2>Pricing</h2>
+        <p>Check our packages...</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message"></textarea>
+        <button class="w3-button w3-black">Send</button>
+      </section>
+
+      <!-- Footer -->
+      <footer class="template-footer">
+        <h3>Stylis Footer</h3>
+        <ul>
+          <li><img src="/w3images/facebook.png" alt="Facebook" /></li>
+          <li><img src="/w3images/twitter.png" alt="Twitter" /></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      function closeSidebar() {
+        document.querySelector(".template-overlay").style.display = "none";
+      }
+      function onClick(element) {
+        // Modal open logic here
+      }
+    </script>
+  </body>
+</html>
