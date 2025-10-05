@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Klickcafe Espresso Template</title>
+
+    <!--
+  Template: Espresso
+  Folder: /templates/espresso/
+  File: index.html
+  Notes: Main HTML file for Espresso template.
+         Contains a menu placeholder for modal menus.
+         SEO config in seo.json.
+-->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/kc-base.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+
+    <style>
+      body,
+      h1,
+      h5 {
+        font-family: "Raleway", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+
+      /* Background image for Espresso template */
+      .bgimg {
+        background-image: url("images/onepage_restaurant.jpg");
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .kc-coffee-button {
+        background-color: #3b2f2f; /* very dark coffee brown */
+        color: white !important; /* force white text */
+        border: none;
+      }
+
+      .kc-coffee-button:hover {
+        background-color: #4a3b3b; /* slightly lighter brown for hover */
+      }
+
+      .kc-powered-by a {
+        color: #a67b5b; /* light coffee brown */
+        text-decoration: none;
+      }
+      .kc-powered-by a:hover {
+        text-decoration: underline;
+      }
+
+      /* Increase menu/contact button size by 25% */
+      .kc-button {
+        font-size: 1em;
+        padding: 1em;
+        color: #a67b5b; /* light coffee brown */
+      }
+      .kc-modal .kc-display-topright {
+        color: white !important;
+      }
+      /* Ensure modal close buttons have white text */
+      .kc-modal .kc-display-topright {
+        color: white !important;
+      }
+
+      /* Ensure top-left buttons (menu/contact) have white text */
+      .kc-display-topleft .kc-button {
+        color: white !important;
+      }
+
+      /* Ensure send message button has white text */
+      .kc-modal .kc-button {
+        color: white !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bgimg kc-display-container kc-text-white">
+      <div class="kc-display-middle kc-jumbo">
+        <p>Espresso</p>
+      </div>
+      <div class="kc-display-topleft kc-container kc-xlarge">
+        <p>
+          <button
+            onclick="document.getElementById('menu').style.display='block'"
+            class="kc-button kc-coffee-button"
+          >
+            Menu
+          </button>
+        </p>
+        <p>
+          <button
+            onclick="document.getElementById('contact').style.display='block'"
+            class="kc-button kc-coffee-button"
+          >
+            Contact
+          </button>
+        </p>
+      </div>
+      <div class="kc-display-bottomleft kc-container">
+        <p class="kc-xlarge">monday - friday 10-23 | saturday 14-02</p>
+        <p class="kc-large">42 village St, New York</p>
+        <p class="kc-powered-by">
+          powered by
+          <a href="https://www.klikcafe.net" target="_blank">Klikcafe</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Menu Modal -->
+    <div id="menu" class="kc-modal">
+      <div class="kc-modal-content kc-animate-zoom">
+        <div class="kc-container kc-black kc-display-container">
+          <span
+            onclick="document.getElementById('menu').style.display='none'"
+            class="kc-button kc-display-topright kc-large"
+            >x</span
+          >
+          <h1>Menu</h1>
+          <p><em>Menu placeholder — content loaded dynamically</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact" class="kc-modal">
+      <div class="kc-modal-content kc-animate-zoom">
+        <div class="kc-container kc-black kc-display-container">
+          <span
+            onclick="document.getElementById('contact').style.display='none'"
+            class="kc-button kc-display-topright kc-large"
+            >x</span
+          >
+          <h1>Contact</h1>
+        </div>
+        <div class="kc-container">
+          <p>
+            Reserve a table, ask for today's special or just send us a message:
+          </p>
+          <form action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="kc-input kc-padding-16 kc-border"
+                type="text"
+                placeholder="Name"
+                required
+                name="Name"
+              />
+            </p>
+            <p>
+              <input
+                class="kc-input kc-padding-16 kc-border"
+                type="number"
+                placeholder="How many people"
+                required
+                name="People"
+              />
+            </p>
+            <p>
+              <input
+                class="kc-input kc-padding-16 kc-border"
+                type="datetime-local"
+                placeholder="Date and time"
+                required
+                name="date"
+                value="2020-11-16T20:00"
+              />
+            </p>
+            <p>
+              <input
+                class="kc-input kc-padding-16 kc-border"
+                type="text"
+                placeholder="Message \ Special requirements"
+                required
+                name="Message"
+              />
+            </p>
+            <p><button class="kc-button kc-white">SEND MESSAGE</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

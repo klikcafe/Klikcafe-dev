@@ -201,7 +201,8 @@ function renderLevel2() {
 }
 
 // ---------- Load JSON and Build Hierarchy ----------
-fetch("/Users/nigeltotterdell/Projects/klikcafe-dev/json/menuWentworth.json")
+alert("I am an alert box!");
+fetch("../../../json/menuWentworth.json")
   .then((res) => {
     if (!res.ok) throw new Error("HTTP " + res.status);
     return res.json();

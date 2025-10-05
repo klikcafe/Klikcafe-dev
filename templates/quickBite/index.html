@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/kc-base.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Amatic SC", sans-serif;
+      }
+      .menu {
+        display: none;
+      }
+      .bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("./images/quickBite.jpg");
+        min-height: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="kc-top kc-hide-small">
+      <div
+        class="kc-bar kc-xlarge kc-black kc-opacity kc-hover-opacity-off"
+        id="myNavbar"
+      >
+        <a href="#" class="kc-bar-item kc-button">HOME</a>
+        <a href="#menu" class="kc-bar-item kc-button">MENU</a>
+        <a href="#about" class="kc-bar-item kc-button">ABOUT</a>
+        <a href="#myMap" class="kc-bar-item kc-button">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg kc-display-container kc-grayscale-min" id="home">
+      <div class="kc-display-bottomleft kc-padding">
+        <span class="kc-tag kc-xlarge">Open from 10am to 12pm</span>
+      </div>
+      <div class="kc-display-middle kc-center">
+        <span class="kc-text-white kc-hide-small" style="font-size: 100px"
+          >thin<br />CRUST PIZZA</span
+        >
+        <span
+          class="kc-text-white kc-hide-large kc-hide-medium"
+          style="font-size: 60px"
+          ><b>thin<br />CRUST PIZZA</b></span
+        >
+        <p>
+          <a href="#menu" class="kc-button kc-xxlarge kc-black"
+            >Let me see the menu</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="kc-container kc-black kc-padding-64 kc-xxlarge" id="menu">
+      <div class="kc-content">
+        <h1 class="kc-center kc-jumbo" style="margin-bottom: 64px">THE MENU</h1>
+        <div class="kc-row kc-center kc-border kc-border-dark-grey">
+          <a
+            href="javascript:void(0)"
+            onclick="openMenu(event, 'Pizza');"
+            id="myLink"
+          >
+            <div class="kc-col s4 tablink kc-padding-large kc-hover-red">
+              Pizza
+            </div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+            <div class="kc-col s4 tablink kc-padding-large kc-hover-red">
+              Salads
+            </div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="kc-col s4 tablink kc-padding-large kc-hover-red">
+              Starter
+            </div>
+          </a>
+        </div>
+
+        <div id="Pizza" class="kc-container menu kc-padding-32 kc-white">
+          <h1>
+            <b>Margherita</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$12.50</span>
+          </h1>
+          <p class="kc-text-grey">
+            Fresh tomatoes, fresh mozzarella, fresh basil
+          </p>
+          <hr />
+
+          <h1>
+            <b>Formaggio</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$15.50</span>
+          </h1>
+          <p class="kc-text-grey">
+            Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
+          </p>
+          <hr />
+
+          <h1>
+            <b>Chicken</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$17.00</span>
+          </h1>
+          <p class="kc-text-grey">
+            Fresh tomatoes, mozzarella, chicken, onions
+          </p>
+          <hr />
+
+          <h1>
+            <b>Pineapple'o'clock</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$16.50</span>
+          </h1>
+          <p class="kc-text-grey">
+            Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil
+          </p>
+          <hr />
+
+          <h1>
+            <b>Meat Town</b> <span class="kc-tag kc-red kc-round">Hot!</span
+            ><span class="kc-right kc-tag kc-dark-grey kc-round">$20.00</span>
+          </h1>
+          <p class="kc-text-grey">
+            Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef,
+            chicken
+          </p>
+          <hr />
+
+          <h1>
+            <b>Parma</b> <span class="kc-tag kc-grey kc-round">New</span
+            ><span class="kc-right kc-tag kc-dark-grey kc-round">$21.50</span>
+          </h1>
+          <p class="kc-text-grey">
+            Fresh tomatoes, mozzarella, parma, bacon, fresh arugula
+          </p>
+        </div>
+
+        <div id="Pasta" class="kc-container menu kc-padding-32 kc-white">
+          <h1>
+            <b>Lasagna</b> <span class="kc-tag kc-grey kc-round">Popular</span>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$13.50</span>
+          </h1>
+          <p class="kc-text-grey">
+            Special sauce, mozzarella, parmesan, ground beef
+          </p>
+          <hr />
+
+          <h1>
+            <b>Ravioli</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$14.50</span>
+          </h1>
+          <p class="kc-text-grey">Ravioli filled with cheese</p>
+          <hr />
+
+          <h1>
+            <b>Spaghetti Classica</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$11.00</span>
+          </h1>
+          <p class="kc-text-grey">Fresh tomatoes, onions, ground beef</p>
+          <hr />
+
+          <h1>
+            <b>Seafood pasta</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$25.50</span>
+          </h1>
+          <p class="kc-text-grey">Salmon, shrimp, lobster, garlic</p>
+        </div>
+
+        <div id="Starter" class="kc-container menu kc-padding-32 kc-white">
+          <h1>
+            <b>Today's Soup</b>
+            <span class="kc-tag kc-grey kc-round">Seasonal</span
+            ><span class="kc-right kc-tag kc-dark-grey kc-round">$5.50</span>
+          </h1>
+          <p class="kc-text-grey">Ask the waiter</p>
+          <hr />
+
+          <h1>
+            <b>Bruschetta</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$8.50</span>
+          </h1>
+          <p class="kc-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+          <hr />
+
+          <h1>
+            <b>Garlic bread</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$9.50</span>
+          </h1>
+          <p class="kc-text-grey">Grilled ciabatta, garlic butter, onions</p>
+          <hr />
+
+          <h1>
+            <b>Tomozzarella</b>
+            <span class="kc-right kc-tag kc-dark-grey kc-round">$10.50</span>
+          </h1>
+          <p class="kc-text-grey">Tomatoes and mozzarella</p>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- About Container -->
+    <div
+      class="kc-container kc-padding-64 kc-red kc-grayscale kc-xlarge"
+      id="about"
+    >
+      <div class="kc-content">
+        <h1 class="kc-center kc-jumbo" style="margin-bottom: 64px">About</h1>
+        <p>
+          The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.
+        </p>
+        <p>
+          <strong>The Chef?</strong> Mr. Italiano himself<img
+            src="/w3images/chef.jpg"
+            style="width: 150px"
+            class="kc-circle kc-right"
+            alt="Chef"
+          />
+        </p>
+        <p>We are proud of our interiors.</p>
+        <img
+          src="/w3images/onepage_restaurant.jpg"
+          style="width: 100%"
+          class="kc-margin-top kc-margin-bottom"
+          alt="Restaurant"
+        />
+        <h1><b>Opening Hours</b></h1>
+
+        <div class="kc-row">
+          <div class="kc-col s6">
+            <p>Mon & Tue CLOSED</p>
+            <p>Wednesday 10.00 - 24.00</p>
+            <p>Thursday 10:00 - 24:00</p>
+          </div>
+          <div class="kc-col s6">
+            <p>Friday 10:00 - 12:00</p>
+            <p>Saturday 10:00 - 23:00</p>
+            <p>Sunday Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img
+      src="/w3images/map.jpg"
+      class="kc-image kc-greyscale"
+      style="width: 100%"
+      id="myMap"
+    />
+
+    <!-- Contact -->
+    <div
+      class="kc-container kc-padding-64 kc-blue-grey kc-grayscale-min kc-xlarge"
+    >
+      <div class="kc-content">
+        <h1 class="kc-center kc-jumbo" style="margin-bottom: 64px">Contact</h1>
+        <p>
+          Find us at some address at some place or call us at 05050515-122330
+        </p>
+        <p>
+          <span class="kc-tag">FYI!</span> We offer full-service catering for
+          any event, large or small. We understand your needs and we will cater
+          the food to satisfy the biggerst criteria of them all, both look and
+          taste.
+        </p>
+        <p class="kc-xxlarge">
+          <strong>Reserve</strong> a table, ask for today's special or just send
+          us a message:
+        </p>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="kc-input kc-padding-16 kc-border"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="kc-input kc-padding-16 kc-border"
+              type="number"
+              placeholder="How many people"
+              required
+              name="People"
+            />
+          </p>
+          <p>
+            <input
+              class="kc-input kc-padding-16 kc-border"
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date"
+              value="2020-11-16T20:00"
+            />
+          </p>
+          <p>
+            <input
+              class="kc-input kc-padding-16 kc-border"
+              type="text"
+              placeholder="Message \ Special requirements"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="kc-button kc-light-grey kc-block" type="submit">
+              SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="kc-center kc-black kc-padding-48 kc-xxlarge">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="kc-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" kc-red", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " kc-red";
+      }
+      document.getElementById("myLink").click();
+    </script>
+  </body>
+</html>
